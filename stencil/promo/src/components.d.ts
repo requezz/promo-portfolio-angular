@@ -8,6 +8,7 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { SCntFlexyViewIslamPromoAboutMe, } from "./components/cnt-flexy-view-islam-promo-about-me/res/view/cnt-flexy-view-islam-promo-about-me/interface/common.interface";
 import { SCntFlexyViewIslamPromoAffordable, } from "./components/cnt-flexy-view-islam-promo-affordable/res/view/cnt-flexy-view-islam-promo-affordable/interface/common.interface";
 import { SCntFlexyViewIslamPromoCommunication, } from "./components/cnt-flexy-view-islam-promo-communication/res/view/cnt-flexy-view-islam-promo-communication/interface/common.interface";
+import { SCntFlexyViewIslamPromoFooter, } from "./components/cnt-flexy-view-islam-promo-footer/res/view/cnt-flexy-view-islam-promo-footer/interface/common.interface";
 import { SCntFlexyViewIslamPromoHeader, } from "./components/cnt-flexy-view-islam-promo-header/res/view/cnt-flexy-view-islam-promo-header/interface/common.interface";
 import { SCntFlexyViewIslamPromoOpportunity, } from "./components/cnt-flexy-view-islam-promo-opportunities/res/view/cnt-flexy-view-islam-promo-opportunities/interface/common.interface";
 import { SCntFlexyViewIslamPromoQuality, } from "./components/cnt-flexy-view-islam-promo-quality/res/view/cnt-flexy-view-islam-promo-quality/interface/common.interface";
@@ -50,6 +51,10 @@ export namespace Components {
         "payload": any;
     }
     interface CntFlexyViewIslamPromoFooter {
+        /**
+          * Приём данных из массива для вывода
+         */
+        "intro": SCntFlexyViewIslamPromoFooter[];
         "payload": any;
     }
     interface CntFlexyViewIslamPromoFooter1_01 {
@@ -356,6 +361,70 @@ declare namespace LocalJSX {
         "payload"?: any;
     }
     interface CntFlexyViewIslamPromoFooter {
+        /**
+          * Приём данных из массива для вывода
+         */
+        "intro"?: SCntFlexyViewIslamPromoFooter[];
+        /**
+          * Клик по Button
+         */
+        "onClickFooterButton"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Contact
+         */
+        "onClickFooterContact"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по FacebookIcon
+         */
+        "onClickFooterFacebookIcon"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по InstagramIcon
+         */
+        "onClickFooterInstagramIcon"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Letter
+         */
+        "onClickFooterLetter"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по LetterIcon
+         */
+        "onClickFooterLetterIcon"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Link
+         */
+        "onClickFooterLink"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Location
+         */
+        "onClickFooterLocation"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по MapMarker
+         */
+        "onClickFooterMapMarker"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по MyLink
+         */
+        "onClickFooterMyLink"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Phone
+         */
+        "onClickFooterPhone"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по PhoneIcon
+         */
+        "onClickFooterPhoneIcon"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по TwitterIcon
+         */
+        "onClickFooterTwitterIcon"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по VkIcon
+         */
+        "onClickFooterVkIcon"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по YoutubeIcon
+         */
+        "onClickFooterYoutubeIcon"?: (event: CustomEvent<any>) => void;
         "payload"?: any;
     }
     interface CntFlexyViewIslamPromoFooter1_01 {
